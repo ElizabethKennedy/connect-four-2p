@@ -34,5 +34,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "@testing-library/cypress": "^9.0.0",
+    "cypress": "^12.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElizabethKennedy/connect-four-2p.git"
+  },
+  "author": "Elizabeth Kennedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElizabethKennedy/connect-four-2p/issues"
+  },
+  "homepage": "https://github.com/ElizabethKennedy/connect-four-2p#readme"
 }
