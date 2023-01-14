@@ -20,7 +20,7 @@ const Counter: React.FC<{ bg: string; row: number; isWin: boolean }> = ({
       {/* if counter in wining combo white circle renders */}
       {isWin && (
         <WhiteCircle
-          data-testid="winnigCounter"
+          data-testid="winningCounter"
           animate={{ scale: [0, 1.5, 1] }}
           transition={{
             duration: 0.4,

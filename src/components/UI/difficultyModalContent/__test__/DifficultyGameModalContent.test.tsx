@@ -1,6 +1,6 @@
 import { screen, render, fireEvent } from '@testing-library/react';
 
-import DifficaltyGameModalContent from '../DifficultyGameModalContent';
+import DifficultyGameModalContent from '../DifficultyGameModalContent';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from '../../../../store/store';
@@ -9,7 +9,7 @@ const renderComponent = () => {
   return render(
     <BrowserRouter>
       <Provider store={store}>
-        <DifficaltyGameModalContent />
+        <DifficultyGameModalContent />
       </Provider>
     </BrowserRouter>
   );

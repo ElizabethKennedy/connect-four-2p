@@ -12,7 +12,7 @@ import {
   DifficultyWrapper,
 } from './DifficultyGameModalContentStyles';
 
-const DifficaltyGameModalContent = () => {
+const DifficultyGameModalContent = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
@@ -53,4 +53,4 @@ const DifficaltyGameModalContent = () => {
   );
 };
 
-export default DifficaltyGameModalContent;
+export default DifficultyGameModalContent;
