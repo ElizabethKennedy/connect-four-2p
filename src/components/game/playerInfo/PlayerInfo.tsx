@@ -7,7 +7,7 @@ import { ReactComponent as Player1 } from '../../../assets/images/player-one.svg
 import { ReactComponent as Player2 } from '../../../assets/images/player-two.svg';
 import {
   playerInfoLeftVariants,
-  playerInfoRigthVariants,
+  playerInfoRightVariants,
 } from '../../../frameMotionVariants/frameMotionVariants';
 import { useAppSelector } from '../../../store/hooks';
 import {
@@ -35,26 +35,26 @@ const PlayerInfo: React.FC<{ player: string }> = ({ player }) => {
   const p1 = useAppSelector(selectPlayer1);
   const p2 = useAppSelector(selectPlayer2);
   // render needed svg base on player name and game mode
-  const PalyerIcon = gameMode === 'PvP' ? iconsPVP[player] : iconsPVCPU[player];
+  const PlayerIcon = gameMode === 'PvP' ? iconsPVP[player] : iconsPVCPU[player];
 
   return (
     <PlayerInfoWrapper
       player={player}
       // @ts-ignore
       variants={
-        player === 'player1' ? playerInfoLeftVariants : playerInfoRigthVariants
+        player === 'player1' ? playerInfoLeftVariants : playerInfoRightVariants
       }
       initial="hidden"
       animate="visible"
       exit="exit"
     >
-      {/* depenends on if it player1 or player2 we render different data */}
+      {/* depends on if it player1 or player2 we render different data */}
       <PlayerName>{player === 'player1' ? p1.name : p2.name}</PlayerName>
 
       <Score data-testid={`${player}-score`}>
         {player === 'player1' ? p1.score : p2.score}
       </Score>
-      <PalyerIcon data-testid="icon" />
+      <PlayerIcon data-testid="icon" />
     </PlayerInfoWrapper>
   );
 };

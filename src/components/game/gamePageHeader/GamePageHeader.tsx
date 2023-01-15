@@ -3,7 +3,7 @@ import React from 'react';
 import { Header } from './GamePageStyles';
 import { SmallButton } from '../../UI/smallButton/SmallButton';
 import { ReactComponent as Logo } from '../../../assets/images/logo.svg';
-import { gameHeaderVariants } from '../../../frameMotinVariats/frameMotionVariants';
+import { gameHeaderVariants } from '../../../frameMotionVariants/frameMotionVariants';
 import { useAppDispatch } from '../../../store/hooks';
 import { toggleModal } from '../../../store/modalSlice';
 import { pauseGame, restartGame } from '../../../store/gameSlice';
