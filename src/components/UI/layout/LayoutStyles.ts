@@ -13,7 +13,7 @@ type colorsType = {
 
 const colors: colorsType = {
   purple: 'var(--color-purple)',
-  darkPurple: 'var(--color-dark-puprle)',
+  darkPurple: 'var(--color-dark-purple)',
 };
 
 export const LayoutWrapper = styled.div<props>`

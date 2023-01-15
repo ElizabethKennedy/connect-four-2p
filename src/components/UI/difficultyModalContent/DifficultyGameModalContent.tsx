@@ -1,5 +1,5 @@
 import React from 'react';
-import { modalVariants } from '../../../frameMotinVariats/frameMotionVariants';
+import { modalVariants } from '../../../frameMotionVariants/frameMotionVariants';
 import { useAppDispatch } from '../../../store/hooks';
 import { startGame, setCPULevel } from '../../../store/gameSlice';
 import { setModal } from '../../../store/modalSlice';

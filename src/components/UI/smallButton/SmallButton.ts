@@ -18,7 +18,7 @@ export const SmallButton = styled.button<props>`
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  transition: transfrom 0.3s ease;
+  transition: transform 0.3s ease;
   border: none;
   min-height: 3.9rem;
   max-height: 3.9rem;
