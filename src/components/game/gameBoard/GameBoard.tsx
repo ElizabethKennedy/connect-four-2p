@@ -10,7 +10,7 @@ const GameBoard: React.FC = () => {
     <GameBoardWrapper data-testid="gameBoard">
       <PlayerInfo player="player1" key={'left'} />
       <Board />
-      <PlayerInfo player="player2" key={'rigth'} />
+      <PlayerInfo player="player2" key={'right'} />
       <GameInfo />
     </GameBoardWrapper>
   );

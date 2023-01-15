@@ -11,7 +11,7 @@ import { AnimatePresence } from 'framer-motion';
 import Counter from '../../UI/counter/Counter';
 import { useAppSelector } from '../../../store/hooks';
 import {
-  selectWinnigCombination,
+  selectWinningCombination,
   selectGameBoard,
 } from '../../../store/gameSlice';
 
@@ -34,7 +34,7 @@ const counters: countersType = {
 
 const CounterGrid: React.FC = () => {
   const windowWidth = useWindowWidth();
-  const winningCobination = useAppSelector(selectWinnigCombination);
+  const winningCombination = useAppSelector(selectWinningCombination);
   const gameGrid = useAppSelector(selectGameBoard);
 
   // to render needed size of svg
@@ -54,7 +54,7 @@ const CounterGrid: React.FC = () => {
                   transition={{ duration: 4 }}
                   // bg based on size and color
                   bg={counter && counters[counter][size]}
-                  isWin={winningCobination[`${i}${j}`]}
+                  isWin={winningCombination[`${i}${j}`]}
                   row={i}
                 />
               )}
