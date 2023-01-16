@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Connect Four With React",
+    "short_name": "C4React",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
