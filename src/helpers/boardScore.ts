@@ -29,10 +29,10 @@ export const scorePosition = (
 
   // Marking winning/returning score
   if (playerPoints === 4) {
-    // Computer won (Infiniry)
+    // Computer won (Infinity)
     return -gameScore;
   } else if (CPUPoints === 4) {
-    // Human won (-Infiniry)
+    // Human won (-Infinity)
     return gameScore;
   } else {
     // Return normal points

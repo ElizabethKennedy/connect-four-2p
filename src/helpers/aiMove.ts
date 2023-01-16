@@ -36,7 +36,7 @@ export function maximizePlay(
     const row = findRowToLandCounter(new_board, column);
     //  check if this place if empty
     if (!new_board[row][column]) {
-      // plave counter in empty position
+      // place counter in empty position
       new_board[row][column] = 'yellow';
 
       let next_move = minimizePlay(
@@ -90,7 +90,7 @@ export function minimizePlay(
   for (let column = 0; column < gameColumns; column++) {
     // creating new board
     let new_board = copyBoard(gameGrid);
-    // findig row to place counter
+    
     const row = findRowToLandCounter(new_board, column);
     //  check if this place if empty
     if (!new_board[row][column]) {

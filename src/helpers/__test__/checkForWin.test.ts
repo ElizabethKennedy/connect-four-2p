@@ -17,7 +17,7 @@ const winGridHorizontal: counter[][] = [
   [null, null, null, null, null, null, null],
   ['red', 'red', 'red', 'red', null, null, null],
 ];
-const winGridkForwardSlash: counter[][] = [
+const winGridForwardSlash: counter[][] = [
   [null, 'red', null, null, null, null, null],
   [null, null, 'red', null, null, null, null],
   [null, null, null, 'red', null, null, null],
@@ -34,7 +34,7 @@ const notwinGrid: counter[][] = [
   ['red', null, null, null, null, null, null],
 ];
 
-describe('checkForWin testting', () => {
+describe('checkForWin testing', () => {
   test('should return false for not win grid', () => {
     const isWin = checkForWin(0, 3, notwinGrid, 'red');
     expect(isWin).toBeFalsy();
@@ -65,7 +65,7 @@ describe('checkForWin testting', () => {
     expect(winner).toBe('red');
   });
   test('should return winCombo there is win combo in forwardslash', () => {
-    const win = checkForWin(0, 1, winGridkForwardSlash, 'red');
+    const win = checkForWin(0, 1, winGridForwardSlash, 'red');
 
     // @ts-ignore
     const { winner } = win;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { WinnersWrapper as WinnersWrapper, WinnerName, WinnerText } from './WinnerStyles';
+import { WinnersWrapper, WinnerName, WinnerText } from './WinnerStyles';
 import { SmallButton } from '../smallButton/SmallButton';
 import { useAppDispatch } from '../../../store/hooks';
 import { playAgain } from '../../../store/gameSlice';

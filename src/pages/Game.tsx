@@ -5,7 +5,7 @@ import GamePageHeader from '../components/game/gamePageHeader/GamePageHeader';
 import GameBoard from '../components/game/gameBoard/GameBoard';
 import { Footer } from '../components/UI/footer/Footer';
 
-import { footerVariants } from '../frameMotinVariats/frameMotionVariants';
+import { footerVariants } from '../frameMotionVariants/frameMotionVariants';
 
 const Game: React.FC = () => {
   return (

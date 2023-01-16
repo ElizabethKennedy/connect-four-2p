@@ -74,7 +74,7 @@ export const gameInfoLeftVariants = {
     },
   };
 
-  export const playerInfoRigthVariants = {
+  export const playerInfoRightVariants = {
     hidden: {
       opacity: 0,
 

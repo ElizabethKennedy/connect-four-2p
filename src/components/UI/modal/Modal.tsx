@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 
 import { backdropVariants } from '../../../frameMotionVariants/frameMotionVariants';
 
-import { Wrapper, Backdrop } from './ModalsStyles';
+import { Wrapper, Backdrop } from './ModalStyles';
 
 const Modal: FunctionComponent<{ children: JSX.Element }> = ({ children }) => {
   const portalElement = document.getElementById('overlays') || document.body;
