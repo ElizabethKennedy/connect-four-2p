@@ -31,7 +31,7 @@ describe('empty spec', () => {
       cy.findByTestId(/color-red/i).should('exist');
     });
 
-    it('should bea ble to place counter', () => {
+    it('should be able to place counter', () => {
       cy.findByTestId('column0').click();
     });
 
